@@ -1,0 +1,34 @@
+package p1;
+
+public class prime1to100 extends oddeven {
+	
+	
+	
+	    public static void main(String[] args) {
+	        
+
+	    
+			int sum =0 ;
+	        for (int i = 2; i <= 100; i++) {   
+	            boolean isPrime = true;        
+
+	            for (int j = 2; j <= i / 2; j++) {  
+	                if (i % j == 0) {
+	                    isPrime = false;       
+	                }
+	            }
+
+	            if (isPrime) {
+	                System.out.print(i + " ");
+	              
+	                sum += i; 
+	            }
+	            System.out.println("\nSum of prime numbers from 1 to 100: " + sum);
+	        }
+	        }
+	    }
+	    
+	
+
+
+
